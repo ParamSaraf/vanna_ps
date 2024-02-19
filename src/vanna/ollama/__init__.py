@@ -6,7 +6,7 @@ import re
 class Ollama(VannaBase):
     def __init__(self, config=None):
         if config is None or 'ollama_host' not in config:
-            self.host = "http://localhost:11434"
+            self.host = "http://kaggle_web_server:11434"
         else:
             self.host = config['ollama_host']
 
